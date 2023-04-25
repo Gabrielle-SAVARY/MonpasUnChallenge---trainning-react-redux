@@ -1,0 +1,19 @@
+@use './../../styles/vars';
+
+.btn {
+  padding: 0.5rem 1rem;
+
+  &:first-child {
+    color: black;
+    background-color: white;
+  }
+  &:last-child {
+    color: white;
+    background-color: black;
+  }
+}
+
+.nuit {
+  background-color: #000;
+  color: #fff;
+}
