@@ -12,7 +12,7 @@ function Exo1() {
         (si + de 6 caractères titre en rouge) :
         {inputExo1}
       </h2>
-      <FormExo1 />
+      <FormExo1 inputExo1={inputExo1} />
 
     </div>
   );

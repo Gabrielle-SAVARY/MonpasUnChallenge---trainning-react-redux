@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import input1REducer from './reducers/input1';
+import input1Reducer from './reducers/input1';
+import input2Reducer from './reducers/input2';
 
 const store = configureStore({
   reducer: {
-    input1: input1REducer,
+    input1: input1Reducer,
+    input2: input2Reducer,
   },
 });
 
