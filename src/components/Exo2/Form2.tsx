@@ -5,14 +5,14 @@ import './styles.scss';
 function Form2() {
   const dispatch = useAppDispatch();
   const inputExo2 = useAppSelector((state) => state.input2.inputExo2);
-  const submitInput2 = useAppSelector((state) => state.input2.inputExo2);
+  const submitInput2 = useAppSelector((state) => state.input2.submit2);
 
   const handleChangeinput2 = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue2 = e.target.value;
     console.log('newValue2', newValue2);
     dispatch(setInputExo2(newValue2));
   };
-
+  // voir reducer possible d'affecter directement state inputExo2 au state submit2
   const handleSubmitForm = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     dispatch(setSubmit2(inputExo2));

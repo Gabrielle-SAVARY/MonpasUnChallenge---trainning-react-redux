@@ -8,3 +8,6 @@ npm install --save @types/react-redux
 # install redux devtoolkit
 npm install @reduxjs/toolkit
 
+# Remerciement
+à [Pierre Davoine](https://github.com/PierreDAVOINE) pour avoir créer ce challenge et pour son aide et sa pédagogie
+à [Hélène Tafrihi-Pousset](https://github.com/helene-tafrihi-pousset) pour être une binôme géniale, avec deux cerveaux ont va plus loin.
