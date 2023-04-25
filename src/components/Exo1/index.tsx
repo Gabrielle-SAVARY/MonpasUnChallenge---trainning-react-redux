@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import './styles.scss';
 import FormExo1 from './FormExo1';
+import { useAppSelector } from '../../hooks/redux';
 
 function Exo1() {
-  const [inputExo1, setInputExo1] = useState('');
+  const inputExo1 = useAppSelector((state) => state.input1.inputExo1);
 
   return (
     <div className="exercice">
@@ -12,7 +12,7 @@ function Exo1() {
         (si + de 6 caractères titre en rouge) :
         {inputExo1}
       </h2>
-      <FormExo1 inputExo1={inputExo1} setInputExo1={setInputExo1} />
+      <FormExo1 />
 
     </div>
   );

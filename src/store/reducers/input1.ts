@@ -1,20 +1,21 @@
 import { createAction, createReducer } from '@reduxjs/toolkit';
 
-interface AppState {
-    inputExo1: string;
-  }
+interface Exo1State {
+  inputExo1: string
+}
 
 // == State
-const initialState: AppState = {
-inputExo1: '',
+const initialState: Exo1State = {
+  inputExo1: '',
 };
 
-const input1REducer = createReducer(, (builder) => {
+export const setInputExo1 = createAction<string>('input1/SET_INPUT_EXO1');
+
+const input1Reducer = createReducer(initialState, (builder) => {
   builder
-
-/*     .addCase(changeDirection, (state, action) => {
-      state.direction = action.payload;
-    }) */
-
+    .addCase(setInputExo1, (state, action) => {
+      state.inputExo1 = action.payload;
+    });
 });
-export default input1REducer;
+
+export default input1Reducer;
