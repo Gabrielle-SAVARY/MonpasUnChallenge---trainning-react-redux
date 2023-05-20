@@ -1,5 +1,7 @@
 # pasUnChallenge---trainning-react-REDUX
 Juste un petit entraînement pour réviser quelques notions de Reacts (version redux toolkit).
+![consignes exos](https://github.com/Gabrielle-SAVARY/MonpasUnChallenge---trainning-react-redux/assets/109412199/44a5b15f-af6d-4396-b7dd-c1126ed5a8d7)
+
 
 # install An Existing React App: react-redux pour typescript
 npm install react-redux
